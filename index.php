@@ -3,7 +3,8 @@
 <head>
 <style>
 body {
-  background-color: lightblue;
+
+  background-color: hsl(0, 0%, 50%);
 }
 </style>
 </head>
@@ -67,7 +68,7 @@ function test_input($data) {
 ?>
 
 
-<p><span class="error">* required field</span></p>
+<p><span class="error">FORM VALIDATION</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
